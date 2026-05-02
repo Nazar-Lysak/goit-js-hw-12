@@ -61,7 +61,7 @@ async function loadMoreImages() {
       showLoadMoreButton();
     }
 
-    if (currentPage > 1 && currentPage * 15 >= totalHits) {
+    if (currentPage * 15 >= totalHits) {
       renderError("We're sorry, but you've reached the end of search results.");
     }
   } catch (error) {
@@ -81,8 +81,8 @@ loadMore.addEventListener('click', async () => {
   const { height: cardHeight } = galleryContainer.firstElementChild.getBoundingClientRect();
 
 
-  await window.scrollBy({
-    top: cardHeight * 5,
+  window.scrollBy({
+    top: cardHeight * 2,
     behavior: 'smooth',
   });   
 });
