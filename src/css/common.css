@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.load-more {
+  display: block;
+  margin: 16px auto;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hide-button {
+  display: none;
+}

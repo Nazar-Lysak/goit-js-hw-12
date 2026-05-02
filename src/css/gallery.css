@@ -1,0 +1,38 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  list-style: none;
+}
+
+.gallery li {
+  border: solid 1px #000000;
+  border-radius: 4px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gallery img {
+  flex-grow: 1;
+  object-fit: cover;
+}
